@@ -53,21 +53,21 @@ static uint32_t register_buffers[CW_REGISTERS_NUM_REGS * CW_REGISTERS_NUM_BUFFER
 
 /// Capture all registers into `buffer_num`.
 #define capture_registers(buffer_num)                                \
-    register_buffers[0 + buffer_num * CW_REGISTERS_NUM_REGS] = REG0; \
-    register_buffers[1 + buffer_num * CW_REGISTERS_NUM_REGS] = REG1; \
-    register_buffers[2 + buffer_num * CW_REGISTERS_NUM_REGS] = REG2; \
-    register_buffers[3 + buffer_num * CW_REGISTERS_NUM_REGS] = REG3; \
-    register_buffers[4 + buffer_num * CW_REGISTERS_NUM_REGS] = REG4; \
-    register_buffers[5 + buffer_num * CW_REGISTERS_NUM_REGS] = REG5; \
-    register_buffers[6 + buffer_num * CW_REGISTERS_NUM_REGS] = REG6; \
-    register_buffers[7 + buffer_num * CW_REGISTERS_NUM_REGS] = REG7; \
-    register_buffers[8 + buffer_num * CW_REGISTERS_NUM_REGS] = REG8; \
-    register_buffers[9 + buffer_num * CW_REGISTERS_NUM_REGS] = REG9; \
-    register_buffers[10+ buffer_num * CW_REGISTERS_NUM_REGS] = REG10;\
-    register_buffers[11+ buffer_num * CW_REGISTERS_NUM_REGS] = REG11;\
-    register_buffers[12+ buffer_num * CW_REGISTERS_NUM_REGS] = REG12;\
-    register_buffers[13+ buffer_num * CW_REGISTERS_NUM_REGS] = REG13;\
-    register_buffers[14+ buffer_num * CW_REGISTERS_NUM_REGS] = REG14;
+    register_buffers[0 + buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG0; \
+    register_buffers[1 + buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG1; \
+    register_buffers[2 + buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG2; \
+    register_buffers[3 + buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG3; \
+    register_buffers[4 + buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG4; \
+    register_buffers[5 + buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG5; \
+    register_buffers[6 + buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG6; \
+    register_buffers[7 + buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG7; \
+    register_buffers[8 + buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG8; \
+    register_buffers[9 + buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG9; \
+    register_buffers[10+ buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG10;\
+    register_buffers[11+ buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG11;\
+    register_buffers[12+ buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG12;\
+    register_buffers[13+ buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG13;\
+    register_buffers[14+ buffer_num * CW_REGISTERS_NUM_REGS] = CW_REG14;
 
 /// Send the captured registers in buffer `buffer_num` back to the Scope.
 /// 
